@@ -1,0 +1,23 @@
+{
+    "name": "theme-plainlight",
+    "displayName": "Plain Light Theme",
+    "description": "Minimal colors on a white background",
+    "icon": "preview.png",
+    "version": "0.0.8",
+    "publisher": "mikelward",
+    "engines": {
+        "vscode": "^1.10.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Plain Light",
+                "uiTheme": "vs",
+                "path": "./themes/Plain Light.tmTheme"
+            }
+        ]
+    }
+}
