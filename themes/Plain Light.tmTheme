@@ -12,7 +12,7 @@
 	<string>Plain Light</string>
 	<key>author</key>
 	<string>Mikel Ward</string>
- 	<key>semanticClass</key>
+	<key>semanticClass</key>
 	<string>theme.light.plain</string>
 	<key>settings</key>
 	<array>
@@ -27,8 +27,8 @@
 				<string>#141404</string>
 				<key>lineHighlight</key>
 				<string>#EEEEEE</string>
-                <key>invisibles</key>
-                <string>#CCCCCC</string>
+				<key>invisibles</key>
+				<string>#CCCCCC</string>
 				<key>selection</key>
 				<string>#CCCCCC</string>
 			</dict>
@@ -63,7 +63,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#000000</string>
+				<string>#141404</string>
 			</dict>
 		</dict>
 		<dict>
@@ -74,7 +74,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#000000</string>
+				<string>#141404</string>
 			</dict>
 		</dict>
 		<dict>
@@ -85,7 +85,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#000000</string>
+				<string>#141404</string>
 			</dict>
 		</dict>
 		<dict>
@@ -98,7 +98,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#000000</string>
+				<string>#141404</string>
 			</dict>
 		</dict>
 		<dict>
@@ -109,7 +109,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#000000</string>
+				<string>#141404</string>
 			</dict>
 		</dict>
 		<dict>
@@ -122,7 +122,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#000000</string>
+				<string>#141404</string>
 			</dict>
 		</dict>
 		<dict>
@@ -133,18 +133,29 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#000000</string>
+				<string>#141404</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>Class name</string>
 			<key>scope</key>
-			<string>entity.name.class, entity.name.type.class, meta.class.python</string>
+			<string>entity.name.class, entity.name.type, meta.class.python, storage.type.scala</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#ED8F23</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Parent class name</string>
+			<key>scope</key>
+			<string>meta.class.inheritance.python</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#141404</string>
 			</dict>
 		</dict>
 		<dict>
@@ -166,7 +177,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#000000</string>
+				<string>#141404</string>
 			</dict>
 		</dict>
 		<dict>
@@ -177,7 +188,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#000000</string>
+				<string>#141404</string>
 			</dict>
 		</dict>
 		<dict>
@@ -188,7 +199,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#000000</string>
+				<string>#141404</string>
 			</dict>
 		</dict>
 		<dict>
@@ -199,7 +210,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#000000</string>
+				<string>#141404</string>
 			</dict>
 		</dict>
 		<dict>
@@ -210,7 +221,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#000000</string>
+				<string>#141404</string>
 			</dict>
 		</dict>
 		<dict>
@@ -221,7 +232,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#000000</string>
+				<string>#141404</string>
 			</dict>
 		</dict>
 		<dict>
@@ -261,17 +272,17 @@
 				<string>#E01BD0</string>
 			</dict>
 		</dict>
-        <dict>
-            <key>name</key>
-            <string>Whitespace</string>
-            <key>scope</key>
-            <string>punctuation.whitespace</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#3B3A32</string>
-            </dict>
-        </dict>
+		<dict>
+			<key>name</key>
+			<string>Whitespace</string>
+			<key>scope</key>
+			<string>punctuation.whitespace</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#3B3A32</string>
+			</dict>
+		</dict>
 	</array>
 </dict>
 </plist>
