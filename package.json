@@ -16,7 +16,7 @@
             {
                 "label": "Plain Light",
                 "uiTheme": "vs",
-                "path": "./themes/Plain Light.tmTheme"
+                "path": "./themes/PlainLight.tmTheme"
             }
         ]
     }
