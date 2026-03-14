@@ -1,0 +1,184 @@
+{
+    "name": "Plain Light",
+    "type": "light",
+    "semanticHighlighting": true,
+    "colors": {
+        "activityBar.background": "#F3F3F3",
+        "activityBar.foreground": "#141404",
+        "activityBar.inactiveForeground": "#666666",
+        "sideBar.background": "#F3F3F3",
+        "sideBarTitle.foreground": "#141404",
+        "sideBarSectionHeader.background": "#F3F3F3",
+        "sideBarSectionHeader.foreground": "#141404"
+    },
+    "tokenColors": [
+        {
+            "settings": {
+                "background": "#FFFFFF",
+                "caret": "#141404",
+                "foreground": "#141404",
+                "lineHighlight": "#EEEEEE",
+                "invisibles": "#CCCCCC",
+                "selection": "#CCCCCC"
+            }
+        },
+        {
+            "name": "Comment",
+            "scope": "comment, string.quoted.docstring",
+            "settings": {
+                "foreground": "#3647D9"
+            }
+        },
+        {
+            "name": "String",
+            "scope": "string",
+            "settings": {
+                "foreground": "#1F8C35"
+            }
+        },
+        {
+            "name": "Number",
+            "scope": "constant.numeric",
+            "settings": {
+                "foreground": "#141404"
+            }
+        },
+        {
+            "name": "Built-in constant",
+            "scope": "constant.language",
+            "settings": {
+                "foreground": "#141404"
+            }
+        },
+        {
+            "name": "User-defined constant",
+            "scope": "constant.character, constant.other",
+            "settings": {
+                "foreground": "#141404"
+            }
+        },
+        {
+            "name": "Variable",
+            "scope": "variable",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#141404"
+            }
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword",
+            "settings": {
+                "foreground": "#141404"
+            }
+        },
+        {
+            "name": "Storage",
+            "scope": "storage",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#141404"
+            }
+        },
+        {
+            "name": "Storage type",
+            "scope": "storage.type",
+            "settings": {
+                "foreground": "#141404"
+            }
+        },
+        {
+            "name": "Class name",
+            "scope": "entity.name.class, entity.name.type, meta.class.python, storage.type.scala",
+            "settings": {
+                "foreground": "#ED8F23"
+            }
+        },
+        {
+            "name": "Parent class name",
+            "scope": "meta.class.inheritance.python",
+            "settings": {
+                "foreground": "#141404"
+            }
+        },
+        {
+            "name": "Function name",
+            "scope": "entity.name.function",
+            "settings": {
+                "foreground": "#ED8F23"
+            }
+        },
+        {
+            "name": "Function argument",
+            "scope": "variable.parameter",
+            "settings": {
+                "foreground": "#141404"
+            }
+        },
+        {
+            "name": "Tag name",
+            "scope": "entity.name.tag",
+            "settings": {
+                "foreground": "#141404"
+            }
+        },
+        {
+            "name": "Tag attribute",
+            "scope": "entity.other.attribute-name",
+            "settings": {
+                "foreground": "#141404"
+            }
+        },
+        {
+            "name": "Library function",
+            "scope": "support.function",
+            "settings": {
+                "foreground": "#141404"
+            }
+        },
+        {
+            "name": "Library constant",
+            "scope": "support.constant",
+            "settings": {
+                "foreground": "#141404"
+            }
+        },
+        {
+            "name": "Library class/type",
+            "scope": "support.type, support.class",
+            "settings": {
+                "foreground": "#141404"
+            }
+        },
+        {
+            "name": "Library variable",
+            "scope": "support.other.variable",
+            "settings": {
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "Invalid",
+            "scope": "invalid",
+            "settings": {
+                "background": "#00000000",
+                "foreground": "#E60909"
+            }
+        },
+        {
+            "name": "Invalid deprecated",
+            "scope": "invalid.deprecated",
+            "settings": {
+                "background": "#00000000",
+                "foreground": "#E01BD0"
+            }
+        },
+        {
+            "name": "Whitespace",
+            "scope": "punctuation.whitespace",
+            "settings": {
+                "foreground": "#3B3A32"
+            }
+        }
+    ]
+}
