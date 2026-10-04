@@ -11,10 +11,10 @@ Conventions for AI agents working in this repository.
 `CLAUDE.md` imports this file, so every agent reads the same conventions.
 Edit `AGENTS.md`.
 
-**At the start of every session, print the path of the `AGENTS.md` you
-loaded and its `last_modified` date** (front matter), so a stale or wrong
-copy is caught before it steers the work. Bump `last_modified` whenever you
-edit this file.
+**At the start of every session, print the full absolute path of the
+`AGENTS.md` you loaded and its `last_modified` date** (front matter), so a
+stale or wrong copy is caught before it steers the work. Bump `last_modified`
+whenever you edit this file.
 
 ## What this repository is
 
