@@ -1,7 +1,7 @@
 ---
 trigger: always_on
 alwaysApply: true
-last_modified: 2026-10-04
+last_modified: 2026-10-13
 ---
 
 # AGENTS.md
@@ -118,6 +118,13 @@ and delete one that has stopped biting.
   branches up to date, or where it conflicts — and merge on the checks and
   approval for its current head, fresh ones if that moved it, rerunning this
   check first. Say which lower PR you waited on, or passed over as quiet.
+- A paragraph that orders a new work item after the item before it —
+  "next", "then", "after that", "follow-up" — must be merged in order,
+  after every earlier item this session was given and any other PR the
+  paragraph names. Its PR may open in parallel but merges only once each
+  of those is finished, with its PRs merged, in any repo, with no time
+  cap; if one won't finish, hold it and ask, autopilot included. Read the
+  list from the session's record, not memory.
 - "Autopilot" = drive without blocking on me. Take the reversible,
   cheapest-to-undo guess and keep going; log each one in TODO.md under a
   "Decisions needing review" heading (what, the alternative, why it's
