@@ -1,7 +1,7 @@
 ---
 trigger: always_on
 alwaysApply: true
-last_modified: 2026-10-13
+last_modified: 2026-10-15
 ---
 
 # AGENTS.md
@@ -223,6 +223,12 @@ and delete one that has stopped biting.
   finding blocks merge until fixed or rebutted with reasoning on the
   thread. Findings can land as a top-level PR comment instead of an
   inline thread — check both before merging, not just review threads.
+- Once the automated reviewer has passed a PR's current head, never make an
+  unnecessary change to it without asking first: a to-do, tidy-up or extra fix
+  re-runs CI and the review for nothing, so it waits for a yes or goes in a
+  follow-up PR. A necessary change goes ahead unasked — a rebase where the
+  branch conflicts, or is behind where the repo requires it up to date, a fix
+  for red CI — and so does drive or autopilot.
 - Skip echoes of your own replies silently — a reply you just posted
   coming back as a new "comment" a moment later isn't new feedback.
 
