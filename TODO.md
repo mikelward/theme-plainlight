@@ -14,3 +14,7 @@
 - [ ] Onboard the weekly npm dependency batch — the
       `dependency-update.yml` plus `scripts/check-dependency-update.mjs`
       pattern gedmap, newshacker, readmo and homepage share.
+- [ ] **Check `AGENTS.md` < 24,000 bytes in CI** (mikelward/stopdash#932):
+      add `test "$(wc -c < AGENTS.md)" -lt 24000` to `ci.yml` on the docs
+      path so it cannot silently grow past Antigravity's 24,000-byte
+      per-file rule cap.
