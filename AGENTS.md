@@ -1,7 +1,7 @@
 ---
 trigger: always_on
 alwaysApply: true
-last_modified: 2026-10-16
+last_modified: 2026-10-17
 ---
 
 # AGENTS.md
@@ -81,9 +81,10 @@ and delete one that has stopped biting.
 
 # Talking to me
 
-- One question at a time, in plain chat — not a structured multiple-choice
-  picker (broken on some mobile clients). Wait for the answer before
-  proceeding on an assumed one, and don't interrupt while I'm still typing.
+- One question at a time, in plain chat or your client's question tool
+  (`AskUserQuestion` in Claude Code, `ask_question` in Antigravity). Wait for
+  the answer before proceeding on an assumed one, and don't interrupt while
+  I'm still typing.
 - Respond to anything I send mid-task in your very next output, before
   continuing other tool calls.
 - Keep replies short — lead with the one thing that matters, then ask
