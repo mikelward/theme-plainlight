@@ -8,8 +8,8 @@ last_modified: 2026-10-17
 
 Conventions for AI agents working in this repository.
 
-`CLAUDE.md` imports this file, so every agent reads the same conventions.
-Edit `AGENTS.md`.
+`CLAUDE.md` imports this file and `GEMINI.md` is a symlink to it, so every
+agent reads the same conventions. Edit `AGENTS.md`.
 
 **At the start of every session, print the full absolute path of the
 `AGENTS.md` you loaded and its `last_modified` date** (front matter), so a
@@ -133,7 +133,8 @@ and delete one that has stopped biting.
   cleanly with it (`git merge-tree --write-tree`, Git 2.38 or later,
   exits 1). Any exit but 0 or 1 from either is a failure to report, not
   an answer. Your own rules decide the rebase from there. Skip a PR with
-  no session URL, and don't retry a failed send.
+  no session URL, or when your client only has local subagent messaging,
+  and don't retry a failed send.
 - "Autopilot" = drive without blocking on me. Take the reversible,
   cheapest-to-undo guess and keep going; log each one in TODO.md under a
   "Decisions needing review" heading (what, the alternative, why it's
@@ -154,13 +155,18 @@ and delete one that has stopped biting.
   branch from `origin/main`, push, or open a PR — say so and stop rather than
   improvising a local substitute.
 - Develop on `<agent>/<short-topic>` branches off `origin/main`, where
-  `<agent>` is your own short name (`claude/...` for Claude Code, `codex/...`
-  for Codex, `cursor/...` for Cursor). Don't hard-code `claude/` unless you
+  `<agent>` is your own short name (`claude/...` for Claude Code,
+  `gemini/...` for Gemini / Antigravity, `codex/...` for Codex, `cursor/...`
+  for Cursor). Don't hard-code `claude/` unless you
   *are* Claude Code. Never commit directly to `main` / `master`. One topic per
   branch.
 - Use standard commit message formatting. Imperative/present mood. "Fix", not
   "Fixed". First line is <66 chars and has no trailing dot. Remainder of the
   commit message should cover both the what and they why.
+- Never name the coding agent's model or version (`Opus 4.8`, `Sonnet`,
+  `Gemini …`, `claude-*`, `gemini-*`) in a commit, PR, comment, or pushed
+  artifact; keep it to chat. Generic attribution (`Co-Authored-By: Claude` /
+  `Gemini`, `Claude-Session:`, "Generated with Claude Code") is fine.
 - One logical surviving change per commit. Rewrite unmerged commits freely
   (squash, amend, reorder, split) so each landing commit is one coherent
   change. Review-fix noise shouldn't survive into `main`.
