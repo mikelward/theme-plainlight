@@ -1,7 +1,7 @@
 ---
 trigger: always_on
 alwaysApply: true
-last_modified: 2026-10-17
+last_modified: 2026-10-22
 ---
 
 # AGENTS.md
@@ -224,12 +224,16 @@ and delete one that has stopped biting.
   ("good catch, will do") is fine and preferred over silence.
 - Where an automated reviewer (Codex or similar) is configured, it runs on
   its own — don't request it manually unless nothing's come back after a
-  few minutes. Read its actual verdict for the *current* head (a reaction
-  or status tied to that commit — most such tools revoke it on every
-  push), not a stale one from before your last push and not a guess; a
-  finding blocks merge until fixed or rebutted with reasoning on the
-  thread. Findings can land as a top-level PR comment instead of an
-  inline thread — check both before merging, not just review threads.
+  few minutes. A review that hangs — nothing back five minutes after a
+  push or request, or stuck in progress (👀) ten minutes on — gets a manual
+  request; one that hangs too gets a second an hour later, and only a
+  second that hangs as well comes to me, never the first. Read its actual
+  verdict for the *current* head (a reaction or status tied to that commit
+  — most such tools revoke it on every push), not a stale one from before
+  your last push and not a guess; a finding blocks merge until fixed or
+  rebutted with reasoning on the thread. Findings can land as a top-level
+  PR comment instead of an inline thread — check both before merging, not
+  just review threads.
 - Once the automated reviewer has passed a PR's current head, never make an
   unnecessary change to it without asking first: a to-do, tidy-up or extra fix
   re-runs CI and the review for nothing, so it waits for a yes or goes in a
