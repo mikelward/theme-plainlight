@@ -1,7 +1,7 @@
 ---
 trigger: always_on
 alwaysApply: true
-last_modified: 2026-10-22
+last_modified: 2026-10-23
 ---
 
 # AGENTS.md
@@ -153,8 +153,13 @@ and delete one that has stopped biting.
   for Cursor). Don't hard-code `claude/` unless you
   *are* Claude Code. Never commit directly to `main` / `master`. One topic per
   branch.
-- Standard commit messages: imperative mood ("Fix", not "Fixed"), first line
-  under 66 chars with no trailing dot, body covering the what and the why.
+- Title commits like a changelog line (maintainer, 2026-10-23): imperative
+  mood ("Fix", not "Fixed"), then the change as someone using the theme sees
+  it, in plain English. The first line is under 66 chars with no trailing dot,
+  e.g. `Fix …` for what was broken, `Improve …` for what got better, `Add …`
+  for what's new, with an optional parenthetical saying how. The body covers
+  the what and the why, including the scenario and the mechanism. PR titles
+  match.
 - Never name the coding agent's model or version (`Opus 4.8`, `Sonnet`,
   `Gemini …`, `claude-*`, `gemini-*`) in a commit, PR, comment, or pushed
   artifact; keep it to chat. Generic attribution (`Co-Authored-By: Claude` /
