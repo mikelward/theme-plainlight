@@ -77,7 +77,7 @@ and delete one that has stopped biting.
   changes if they relate to something else in the same session or branch.
 - If you make a mistake, suggest changes to AGENTS.md or skills to improve
   future results. Add a new rule the first time something bites, not the third.
-- Keep AGENTS.md under 24,000 bytes (`wc -c AGENTS.md`): Antigravity caps rule
+- Keep AGENTS.md under 22,000 bytes (`wc -c AGENTS.md`): Antigravity caps rule
   files at 24 KB and silently truncates the tail.
 - Let me know if we're getting close to the context window and should compact.
 
