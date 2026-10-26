@@ -1,7 +1,7 @@
 ---
 trigger: always_on
 alwaysApply: true
-last_modified: 2026-10-23
+last_modified: 2026-10-26
 ---
 
 # AGENTS.md
@@ -88,7 +88,9 @@ and delete one that has stopped biting.
   the answer before proceeding on an assumed one, and don't interrupt while
   I'm still typing.
 - Respond to anything I send mid-task in your very next output, before
-  continuing other tool calls.
+  continuing other tool calls. **Claude Code only** (maintainer, 2026-10-25):
+  its app reliably shows just a turn's last message, so reply only there,
+  answering a mid-turn message at a stopping point soon.
 - Keep replies short — lead with the one thing that matters, then ask
   before unloading more.
 - Message me only when I need to see it — each message notifies my phone. Work
